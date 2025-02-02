@@ -1,0 +1,26 @@
+
+
+0. Account Setup:
+ * How many AWS accounts? 
+  -- start with one for  now --production
+  -- you can have another one for development (testing purposes -for new features) 
+
+
+1. Networking: 
+ 
+  VPC == 
+  * one IGW for internet connectivity
+  * one public subnet routing to IGW - this is where ec2 will live
+  * one or more private subnets
+
+
+
+Considerations: 
+* no need for NAT gateway, we will put lambda in public subnet also
+  
+  * high availability is a next step enahancement
+  * enhanced security to be added later
+
+
+
+

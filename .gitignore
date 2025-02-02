@@ -1,0 +1,63 @@
+# Terraform Files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+terraform.tfstate.backup
+
+# Python Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.env/
+.envrc
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python Dependency Files
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & Debugging Files
+*.log
+*.out
+*.err
+debug.log
+
+# Build Files
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Docker & Deployment
+docker-compose.override.yml
+.envrc
+.env.local
+.env.production
+.env.test
+
+# AWS Credentials (if using Terraform with AWS)
+.aws/
