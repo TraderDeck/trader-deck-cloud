@@ -23,6 +23,16 @@ resource "aws_s3_bucket_policy" "ticker_bucket_policy" {
   policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::676206948384:user/s3-user"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::td-ticker-icons/*"
+
+        },
+
        {
             "Effect": "Allow",
             "Principal": {
