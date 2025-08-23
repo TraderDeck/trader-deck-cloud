@@ -61,3 +61,11 @@ docker-compose.override.yml
 
 # AWS Credentials (if using Terraform with AWS)
 .aws/
+github_secrets.txt
+github_ec2_secrets.txt
+
+*.pem
+
+# Lambda source files to be excluded from version control
+lambda_src/
+**/lambda_src/

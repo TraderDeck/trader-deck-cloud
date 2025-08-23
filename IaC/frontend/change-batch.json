@@ -1,0 +1,18 @@
+{
+    "Changes": [
+      {
+        "Action": "UPSERT",
+        "ResourceRecordSet": {
+          "Name": "_9d2781a1bc5e95cb424664d69c23ddba.mytraderdeck.com.",
+          "Type": "CNAME",
+          "TTL": 300,
+          "ResourceRecords": [
+            {
+              "Value": "_1cd6e0762ab68e065652655051c77bd6.xlfgrmvvlj.acm-validations.aws."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

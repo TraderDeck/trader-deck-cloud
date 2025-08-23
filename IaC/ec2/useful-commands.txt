@@ -1,0 +1,1 @@
+ssh -i traderdeck-key.pem ec2-user@<ip>

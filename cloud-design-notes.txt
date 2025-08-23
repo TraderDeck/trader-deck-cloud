@@ -22,5 +22,9 @@ Considerations:
   * enhanced security to be added later
 
 
-
+Where the apps are deployed: 
+- React app: deployed to an ec2 in a public subnet (with IGW) in order (or s3+ cloudfront)
+- Springboot app: deployed to private subnet that has an Nat gateway for one way communication only (to pull dependencies and have access
+to AWS secrets manager). For security reasons, it should never be access from internet
+- RDS instance: in a completely private subnet -- no need for internet access + highly secure
 

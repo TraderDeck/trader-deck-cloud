@@ -82,3 +82,13 @@ resource "aws_subnet" "subnet_8" {
     Name        = "subnet-8"
   }
 }
+
+
+
+# NACL subnet associations
+
+resource "aws_network_acl_association" "nacl_associations" {
+  for_each      = toset(local.subnet_ids)
+  network_acl_id = aws_network_acl.traderdeck_nacl.id
+  subnet_id      = each.value
+}
