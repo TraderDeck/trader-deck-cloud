@@ -1,4 +1,4 @@
-# Terraform Files
+# Terraform
 *.tfstate
 *.tfstate.*
 .terraform/
@@ -11,6 +11,7 @@ override.tf.json
 terraform.tfvars
 terraform.tfvars.json
 terraform.tfstate.backup
+# End Terraform ignores
 
 # Python Bytecode
 __pycache__/
@@ -69,3 +70,6 @@ github_ec2_secrets.txt
 # Lambda source files to be excluded from version control
 lambda_src/
 **/lambda_src/
+
+
+lambda_function.zip

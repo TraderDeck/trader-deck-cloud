@@ -1,8 +1,0 @@
-backend_private_ip = "10.16.78.89"
-backend_public_ip = ""
-bastion_private_ip = "10.16.5.152"
-bastion_public_ip = "3.80.228.67"
-
-rds endpoint is : traderdeck-db.crmgqsg2qww7.us-east-1.rds.amazonaws.com
-
-ssh -i traderdeck-key.pem -N -L 5432:traderdeck-db.crmgqsg2qww7.us-east-1.rds.amazonaws.com:5432 ec2-user@3.80.228.67

@@ -1,13 +1,7 @@
-after launching bastion host --
-copy .pem key to it so it can be used to ssh to backend ec2 
-
-run this command from where the key is stored locally:
-scp -i ./traderdeck-key.pem ./traderdeck-key.pem ec2-user@3.80.228.67:/home/ec2-user/
-
 
 how to ssh to bastion host: 
 ssh -i traderdeck-key.pem ec2-user@<BASTION_PUBLIC_IP>
 
 
-
-ssh -i traderdeck-key.pem ec2-user@3.80.228.67
+run this command from where the key is stored locally to copy it to an ec2:
+scp -i ./traderdeck-key.pem ./traderdeck-key.pem ec2-user@<EC2_IP>:/home/ec2-user/
